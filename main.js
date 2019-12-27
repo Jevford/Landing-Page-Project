@@ -35,15 +35,15 @@ setBacknGreet = () => {
     hour = today.getHours();
 
     if(hour < 12) {
-        document.body.style.backgroundImage = "url('../img/morning.jpg')"
+        document.body.style.backgroundImage = "url('./img/morning.jpg')"
         greeting.textContent = 'Goood Morning';
         document.body.style.color = 'white';
         document.body.style.backgroundPositionY = '50%';
     } else if(hour < 18) {
-        document.body.style.backgroundImage = "url('../img/afternoon.jpg')"
+        document.body.style.backgroundImage = "url('./img/afternoon.jpg')"
         greeting.textContent = 'Goood Afternoon';
     } else {
-        document.body.style.backgroundImage = "url('../img/evening.jpg')"
+        document.body.style.backgroundImage = "url('./img/evening.jpg')"
         greeting.textContent = 'Goood Evening';
         document.body.style.color = 'white';
     }
