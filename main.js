@@ -19,7 +19,7 @@ function showTime() {
     hour = hour % 12 || 12;
 
     // Output Time
-    time.innerHTML = `${addZero(hour)}<span>:</span>${addZero(min)}<span>:</span>${addZero(sec)} ${amPM}`;
+    time.innerHTML = `${addZero(hour)}<span>:</span>${addZero(min)}<span>:</span>${addZero(sec)} <span>${amPM}</span>`;
 
     setTimeout(showTime, 1000);
 }
@@ -36,7 +36,7 @@ setBacknGreet = () => {
 
     if(hour < 12) {
         document.body.style.backgroundImage = "url('./img/morning.jpg')"
-        greeting.textContent = 'Goood Morning';
+        greeting.textContent = 'Good Morning';
         document.body.style.color = 'white';
         document.body.style.backgroundPositionY = '50%';
     } else if(hour < 18) {
